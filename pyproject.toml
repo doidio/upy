@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/doidio/upy"
+"Bug Tracker" = "https://github.com/doidio/upy/issues"
+
+[project]
+name = "upy"
+authors = [
+    { name = "doidio", email = "88172828@qq.com" },
+]
+description = "volumetric image in openvdb format"
+readme = "README.md"
+requires-implementation = ">=3.10"
+keywords = []
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "upy.__version__"}
+
+[tool.setuptools.package-data]
+"*" = ["*"]
